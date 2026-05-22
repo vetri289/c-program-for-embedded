@@ -1,0 +1,848 @@
+250 program
+    
+simple c program basic concept: lv1:
+
+
+
+1) circumfrance of circle:
+
+#include<stdio.h>
+void main(){
+    int r;
+    float c;
+    printf("enter the radius of circle");
+    scanf("%d",&r);
+    c=2*3.14*r;
+    printf("%f",c);
+    
+}
+2) area of triangele:
+
+#include<stdio.h>
+void main(){
+    int a;
+    int b;
+    printf("enter the breath ");
+    scanf("%d",&a);
+    printf("enter the length");
+    scanf("%d",&b);
+    int c=0.5*a*b;
+    printf("%d",c);
+}
+3) value to ascii value:
+
+#include<stdio.h>
+void main(){
+    char a=67;
+    printf("%c",a);
+}
+4) ascii to value:
+
+#include<stdio.h>
+void main(){
+    char a='a';
+    printf("%d",a);
+}
+5)convert person name in abbrivaited:
+
+#include<stdio.h>
+void main(){
+    char a[100]="sri ram";
+    for(int i=0;a[i]!='\0';i++){
+        if(i==0){
+            printf("%c",a[i]);
+        }
+        if(a[i]==' '){
+            printf("%c",a[i+1]);
+        }
+    }
+}
+6) simple intrest:
+#include<stdio.h>
+void main(){
+    int p,r,t;
+    printf("enter the principal value: ");
+    scanf("%d",&p);
+     printf("enter the rate value: ");
+    scanf("%d",&r);
+ printf("enter the time value: ");
+    scanf("%d",&t);
+ float a=(p*r*t)/100;
+printf(" simple intrest is %f",a);
+
+}
+7) average of 5 subject mark:
+
+
+#include<stdio.h>
+void main(){
+    int a,b,c,d,e;
+    printf("enter the mark of tamil");
+    scanf("%d",&a);
+      printf("enter the mark of english");
+    scanf("%d",&b); 
+    printf("enter the mark of maths");
+    scanf("%d",&c);
+      printf("enter the mark of science");
+    scanf("%d",&d);
+      printf("enter the mark of social");
+    scanf("%d",&e);
+int f=(a+b+c+d+e)/A5;
+printf("%d",f);
+}
+
+8) temperatue to celisuese:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the temperature");
+    scanf("%d",&a);
+    if(a==1){
+        printf("33.8");
+    }else{
+        for(int i=2;i<=a;i++){
+           float b=33.8+(i*1.8);
+           printf("%f",b);
+        }
+    }
+}
+
+9) size of data types:
+
+#include<stdio.h>
+void main(){
+    printf("size of int %zu\n",sizeof(int));
+    printf("size of float %zu\n",sizeof(float));
+    printf("size of char %zu\n",sizeof(char));
+    printf("size of double %zu\n",sizeof(double));
+}
+10) factriole of number:
+
+#include <stdio.h>
+void main(){
+    int a,s=1;
+    printf("enter the number to factriol");
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++){
+        s=s*i;
+        
+    }
+     printf("%d",s);
+     
+}
+11) get n and get n^1 n^2 n^3:
+
+#include<stdio.h>
+void main(){
+    int n,a=1;
+    printf("enter the n value");
+    scanf("%d",&n);
+    for(int i=1;i<4;i++){
+        a=a*n;
+        printf("%d\n",a);
+        
+    }
+}
+
+
+
+   2}if else concept : lv2:
+
+
+1) find the greatest number amoung the 3 number
+
+
+#include<stdio.h>
+void main(){
+    int a,b,c;
+    printf("enter the a value:");
+    scanf("%d",&a);
+      printf("enter the b value:");
+    scanf("%d",&b);
+      printf("enter the c value:");
+    scanf("%d",&c);
+    if(a>b){
+        printf("%d",a);
+       
+    }
+     else if(b>c){
+          printf("%d",b);
+        }
+        else{
+            printf("%d",c);
+        }
+}
+
+2) find the give number is positive eor negative:
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("enter the value");
+    scanf("%d",&a);
+    if(a>0){
+        printf("positive");
+    }
+    else{
+        printf("negative");
+    }
+}
+
+3) the give char is vowel or not :
+
+#include<stdio.h>
+void main(){
+    char a;
+    printf("enter the char:");
+    scanf("%c",&a);
+    if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'){
+        printf(" vowels");
+    }
+    else{
+        printf("not a vowels");
+    }
+}
+
+4) find the char is interger or alphabet:
+
+#include<stdio.h>
+void main(){
+    char a;
+    printf("enter the value");
+    scanf("%c",&a);
+    for(char ch='a';ch<='z';ch++){
+    
+    if(a==ch){
+        printf("alphabet");
+        break;
+    }
+    else{
+        printf("its a integer");
+        break;
+    }
+    
+    }
+}
+
+3) odd or even:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the  value");
+    scanf("%d",&a);
+    if(a%2==0){
+        printf("even");
+    }
+    else{
+        printf("odd");
+    }
+}
+
+ 4) find the greatest between 2 numbers
+
+#include<stdio.h>
+void main(){
+    int a, b;
+    printf("enter the a value");
+    scanf("%d",&a);
+    printf("enter the b value");
+    scanf("%d",&b);
+    if(a>b){
+        printf("%d",a);
+    }
+    else{
+        printf("%d",b);
+    }
+    
+    
+}
+
+5) leap year or not:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the value");
+    scanf("%d",&a);
+    if(a%4==0){
+        printf("leap year");
+    }
+    else{
+        printf("its not a leap year");
+    }
+}
+
+6) eligible for vote or not:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the age");
+    scanf("%d",&a);
+    if(a>=18){
+        printf("eligibale to vote");
+    }
+    else{
+        printf("not eligiable for vote");
+    }
+}
+
+7) the date month year is correct or not:
+
+#include<stdio.h>
+void main(){
+    int date,month,year;
+    printf("enter the date");
+    scanf("%d",&date);
+     printf("enter the month");
+    scanf("%d",&month);
+     printf("enter the year");
+    scanf("%d",&year);
+
+    if(date==16&&month==5&&year==2026){
+        printf("today");
+    }
+    else{
+        printf("not today");
+    }
+}
+
+8) i give a number give the weakend:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the week day");
+    scanf("%d",&a);
+    for(int i=1;i<=31;i++){
+        if(a<=7){
+            printf("7");
+            break;
+        } else if(a>7&& a<=14){
+            printf("14");
+            break;
+        }
+        else if(a>14&& a<=21){
+            printf("21");
+            break;
+        }
+        else if(a>21&&a<=28){
+            printf("28");
+            break;
+        } else{
+            printf("its go to next month");
+            break;
+        }
+    }
+}
+
+9) enter the number to find the month and number of days:
+
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the month :");
+    scanf("%d",&a);
+    if(a==1){
+        printf("its jan 31 days");
+    }else if(a==2){
+        printf("its feb 28 days");
+    }
+    else if(a==3){
+        printf("its mar 31 days");
+    }
+    else if(a==4){
+        printf("its apr 30 days");
+    }
+    else if(a==5){
+        printf("its may 31 days");
+    }
+    else if(a==6){
+        printf("its jun 30 days");
+    }
+    else if(a==7){
+        printf("its july 31 days");
+    }
+    else if(a==8){
+        printf("its aug 31 days");
+    }
+    else if(a==9){
+        printf("its sep 30 days");
+    }
+    else if(a==10){
+        printf("its oct 31 days");
+    }
+    else if(a==11){
+        printf("its nov 30 days");
+    }else{
+        printf("its dec 31 days");
+    }
+    
+}
+
+10) count number of notes(rupees 500,200,100,50,10) are in certain amount:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the amount");
+    scanf("%d",&a);
+    int count=0;
+    while(a>=500){
+        a=a-500;
+        count++;
+    }
+     while(a>=200){
+        a=a-200;
+        count++;
+    }
+     while(a>=100){
+        a=a-100;
+        count++;
+    }
+     while(a>=50){
+        a=a-50;
+        count++;
+    }
+     while(a>=10){
+        a=a-10;
+        count++;
+    }
+    printf("%d",count);
+}
+
+
+ 11)find its true triangle or not:
+
+#include<stdio.h>
+void main(){
+    int a,b,c,d,e,f;
+    printf("enter the a side");
+    scanf("%d",&a);
+      printf("enter the b side");
+    scanf("%d",&b);
+      printf("enter the c side");
+    scanf("%d",&c);
+    d=a+b;
+    e=b+c;
+    f=c+a;
+    if(d>c&&e>a&&f>b){
+        printf("its a triangle");
+    }else{
+        printf("its not a triangle");
+    }
+}
+
+12) find the types of triangle (equalent,isolate,scalene)
+
+#include<stdio.h>
+void main(){
+    int a,b,c;
+    printf("enter the a side");
+    scanf("%d",&a);
+      printf("enter the b side");
+    scanf("%d",&b);
+      printf("enter the c side");
+    scanf("%d",&c);
+    if(a==b&b==c){
+        printf("it is equalatral triangle");
+    } 
+    else if(a==b||b==c||c==a){
+        printf("its isolateral triangle");
+    }
+    else{
+        printf("its scalene triangle");
+    }
+}
+
+13) profit or loss:
+
+#include<stdio.h>
+void main(){
+    int a,b;
+    printf("enter the cost price:");
+    scanf("%d",&a);
+    printf("enter the selling price:");
+    scanf("%d",&b);
+    if(a<b){
+        printf("its profit");
+    }
+    else if(a==b){
+        printf("its no profit no loss");
+        
+    }else{
+        printf("its loss");
+    }
+}
+
+
+iii) loop concept :
+
+1) reverse the for loop:
+
+#include<stdio.h>
+void main(){
+    for(int i=10;i>=1;i--){
+        printf("%d\n",i);
+    }
+}
+
+2) fibbnaso series :
+
+#include<stdio.h>
+void main(){
+    int n=0;
+    printf("enter the number");
+    scanf("%d",&n);
+    int a=0;
+    int b=1;
+    int c;
+    printf("%d",a);
+    printf("%d",b);
+    for(int i=2;i<n;i++){
+        c=a+b;
+        a=b;
+        b=c;
+        printf("%d",c);
+    }
+}
+
+3) sum the all natural element :
+
+#include<stdio.h>
+void main(){
+    int a,n=0;
+    printf("enter the number to sum");
+    scanf("%d",&a);
+    for(int i=1;i<=a;i++){
+        n=n+i;
+    }
+    printf("%d",n);
+}
+4)reverse the number 123=321:
+
+#include<stdio.h>
+void main(){
+    int a,i=0;
+    int arr[10];
+    printf("enter the number");
+    scanf("%d",&a);
+    while(a>0){
+        int b=a%10;
+       arr[i]=b;
+        a=a/10;
+        i++;
+    }
+        for(int j = 0; j < i; j++) {
+        printf("%d\n", arr[j]);
+}
+}
+  5) the given value is palindrome or not: 
+
+
+
+#include<stdio.h>
+void main(){
+    int a,r=0;
+    printf("enter the value");
+    scanf("%d",&a);
+    int t=a;
+    while(a>0){
+        int d=a%10;
+        r=r*10+d;
+        a=a/10;
+        printf("%d",d);
+    }
+    if(t==r){
+        printf("palindrome");
+      
+    }else{
+        printf("not palindrome");
+    }
+}
+6) count numberof digit:
+
+#include<stdio.h>
+void main(){
+    int a,count=0;
+    printf("enter the number");
+    scanf("%d",&a);
+    while(a>0){
+    int d=a%10;
+    a=a/10;
+    count++;
+    }
+    printf("%d",count);
+    
+}
+
+
+iv) for loop question:
+
+
+1) tables print using for loop:
+
+#include<stdio.h>
+void main(){
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    for(int i=0;i<10;i++){
+        int c=a*i;
+        printf("%d * %d = %d\n", a, i, c);
+    }
+}  
+
+2) sort the array :
+
+#include<stdio.h>
+void main(){
+    int arr[5]={4,1,3,2,5};
+    for(int i=0;i<5;i++){
+        for( int j=i+1;j<5;j++){
+        if(arr[i] > arr[j]){
+            int t=arr[i];
+            arr[i]=arr[j];
+            arr[j]=t;
+        }
+    }
+        printf("%d",arr[i]);
+    
+}
+}
+3) find the largest number:
+
+
+#include<stdio.h>
+void main(){
+    int arr[5]={4,1,3,2,5};
+    for(int i=0;i<5;i++){
+        for( int j=i+1;j<5;j++){
+        if(arr[i] > arr[j]){
+            int t=arr[i];
+            arr[i]=arr[j];
+            arr[j]=t;
+        }
+    }
+        printf("%d",arr[5]);
+    
+}
+}
+
+4) find the smallest number:
+
+#include<stdio.h>
+void main(){
+    int arr[5]={4,1,3,2,5};
+    for(int i=0;i<5;i++){
+        for( int j=i+1;j<5;j++){
+        if(arr[i] > arr[j]){
+            int t=arr[i];
+            arr[i]=arr[j];
+            arr[j]=t;
+        }
+    }
+        printf("%d",arr[i]);
+    
+}
+}
+
+
+5) find the second largest number :
+
+#include<stdio.h>
+void main(){
+    int arr[5]={4,1,3,2,5};
+    for(int i=0;i<5;i++){
+        for( int j=i+1;j<5;j++){
+        if(arr[i] > arr[j]){
+            int t=arr[i];
+            arr[i]=arr[j];
+            arr[j]=t;
+        }
+    }
+        printf("%d",arr[4]);
+    
+}
+}
+  
+
+6) to move 0 are one side and ones are one side 
+
+
+#include<stdio.h>
+void main(){
+    int a[6]={1,0,1,0,1,0};
+    for(int i=0;i<6;i++){
+        if(a[i]==1){
+            printf("%d",a[i]);
+        }
+            
+        } for(int j=0;j<6;j++){
+            if(a[j]==0){
+                    printf("%d",a[j]);
+            }
+        }
+    }
+
+7) remove the element in array:
+
+#include<stdio.h>
+void main(){
+    int a[5]={1,2,3,4,5};
+    int size=5;
+    int r=3;
+    for(int i=0;i<5;i++){
+        if(a[i]==r){
+        for(int j=i;j<size-1;j++){
+            a[j]=a[j+1];
+        }
+        size--;
+        i--;
+        }
+
+        
+    }
+     for (int i=0;i<size;i++) {
+        printf("%d ",a[i]);
+    }
+}
+
+
+8) print the negative number on array :
+
+#include<stdio.h>
+void main(){
+    int a[5]={-1,2,3,-3,4};
+    for(int i=0;i<5;i++){
+        if(a[i]<0){
+            printf("%d",a[i]);
+        }
+    }
+}
+
+9) sum the all element on array:
+
+#include<stdio.h>
+void main(){
+    int a[5]={1,2,3,4,5};
+    int s=0;
+    for(int i=0;i<5;i++){
+        s=s+a[i];
+    }
+     printf("%d",s);
+}
+
+
+10) revesre the array :
+
+#include <stdio.h>
+void main(){
+    int a[4]={1,2,3,4};
+    for(int i=4-1;i>=0;i--){
+        printf("%d",a[i]);
+    }
+}
+
+
+11) count odd or even:
+
+
+#include<stdio.h>
+int main(){
+    int arr[5]={1,2,3,4,5};
+    int count1=0;
+     int count2=0;
+     for(int i=0;i<5;i++){
+         if(arr[i]%2==0){
+             count1++;
+             
+         }else{
+             count2++;
+         }
+     }
+     printf("even: %d\n",count1);
+      printf("odd: %d\n",count2);
+}
+
+
+
+
+V) funcation :
+
+1)cube of value:
+
+#include<stdio.h>
+int cube(){
+    int a;
+    printf("enter the number");
+    scanf("%d",&a);
+    return a*a*a;
+    
+}
+void main(){
+    int r;
+    r=cube();
+    printf("%d",cube);
+}
+
+2) circle diameter,circumference,area by funcation
+#include<stdio.h>
+int area(){
+    int a;
+    printf("enetr the a value");
+    scanf("%d",&a);
+    return 3.14*(a*a);
+}
+int cic(){
+    int b;
+      printf("enetr the a value");
+    scanf("%d",&b);
+    return 2*3.14*b;
+    
+}
+int dia(){
+    int c;
+     printf("enetr the a value radius");
+    scanf("%d",&c);
+    return 2*c;
+    
+}
+void main(){
+    float d;
+    float e;
+    int f;
+    d=area();
+    e=cic();
+    f=dia();
+    printf("%f\n",d);
+    printf("%f\n",e);
+    printf("%d\n",f);
+}
+
+3) find small and big number use in funcation:
+
+#include<stdio.h>
+ int max(){
+     int a;
+     int b;
+     printf("enetr the number a :");
+     scanf("%d",&a);
+      printf("enetr the number b :");
+     scanf("%d",&b);
+     if(a>b){
+         return a;
+     }else{
+         return b;
+     }
+     
+     
+ }
+ void main(){
+     int c;
+     c=max();
+     printf("%d",c);
+ }
